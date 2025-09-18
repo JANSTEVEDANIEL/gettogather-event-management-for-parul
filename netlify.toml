@@ -1,0 +1,8 @@
+# Netlify configuration for Single Page Applications (SPA)
+# This ensures that all routes are handled by index.html,
+# preventing 404 errors on direct navigation to sub-pages.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
